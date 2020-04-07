@@ -34,10 +34,6 @@ class _IndonesiaState extends State<Indonesia> {
       activeCare: data['activeCare']['value']
     );
     list.add(summary);
-    print("Confirmed: "+summary.confirmed.toString());
-    print("dalam penanganan: "+summary.activeCare.toString());
-    print("sembuh: "+summary.recovered.toString());
-    print("meninggal dunia: "+summary.deaths.toString());
   }
 
   worldData() async {
@@ -56,8 +52,6 @@ class _IndonesiaState extends State<Indonesia> {
       recovered: resultRecovered['value'],
       deaths: resultDeaths['value']
     );
-
-    print(summaryWorld.confirmed.toString());
 
     worldlist.add(summaryWorld);
     setState(() {

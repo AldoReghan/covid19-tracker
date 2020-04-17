@@ -23,7 +23,7 @@ class _WorldState extends State<World> {
     setState(() {
       loading = true;
     });
-    final url = "https://www.trackcorona.live/api/countries/";
+    final url = "https://www.trackcorona.live/api/countries";
     final response = await http.get(url);
     setState(() {
       final result = jsonDecode(response.body);

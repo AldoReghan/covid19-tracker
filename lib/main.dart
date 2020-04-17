@@ -6,10 +6,11 @@ import 'package:flutter/services.dart';
 void main(){
   runApp(MaterialApp(
     home: MyApp(),
+    debugShowCheckedModeBanner: false,
   ));
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
-    statusBarBrightness: Brightness.dark
+    statusBarBrightness: Brightness.dark,
   ));
 }
 
